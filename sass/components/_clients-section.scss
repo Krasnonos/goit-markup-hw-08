@@ -1,0 +1,54 @@
+/* clients-section */
+.clients-section{
+    padding: 94px 0;
+    background-color: #FFFFFF;
+}
+
+.clients-section__title{
+    margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.clients-list{
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-list__item{
+    width: 170px;
+    height: 92px;
+    & + &{
+        margin-left: 30px;
+    }
+}
+
+.clients-list__link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: color $time $cube, border-color $time $cube;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        border-color: #188ce8;
+    }
+}
+
+.clients-list__icon{
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}

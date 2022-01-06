@@ -1,0 +1,116 @@
+/* header */
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    @extend %list;
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-list__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-list__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $black-important-color;
+    position: relative;
+    transition: color $time $cube;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.nav-list__link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    transform: scale(0);
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    transition: transform $time $cube;
+}
+
+.nav-list__link:hover::after{
+    transform: scale(1);
+}
+
+.nav-list__link--current {
+    color: $accent-color;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -26px;
+        transform: scale(1);
+        width: 100%;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+    }
+}
+
+.contact-list{
+    @extend %list;
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.contact-list__link {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $black-main-color;
+    transition: color $time $cube;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.contact-list__icon-envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.contact-list__icon-smartphone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
