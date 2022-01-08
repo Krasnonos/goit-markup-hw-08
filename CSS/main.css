@@ -821,7 +821,7 @@ img {
 
 .subscribe__input {
   margin: 0 auto;
-  width: 450px;
+  max-width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;
@@ -854,6 +854,12 @@ img {
 @media screen and (max-width: 1199px) {
   .subscribe__input {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe__input {
+    width: 450px;
   }
 }
 
@@ -1109,10 +1115,16 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .form {
