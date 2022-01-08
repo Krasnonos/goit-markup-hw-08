@@ -12,10 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="header__container container">
           <nav class="nav">
             <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
+            <button type="button" class="header-button-open js-open-menu">
+              <svg class="header__menu-icon" width="24" height="16">
+                <use href="./images/icons.svg#icon-open-menu"></use>
+              </svg>
+            </button>
             <ul class="nav-list">
               <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a></li>
               <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
@@ -33,7 +38,35 @@
                 </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
-    </header> -->
+        <div class="menu-container js-menu-container">
+          <button type="button" class="close-button">
+            <svg class="header__menu-icon js-close-menu" width="19" height="19">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-list__item"><a href="./index.html" class="menu-list__link menu-list__link--current">Студия</a></li>
+            <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link">Портфолио</a></li>
+            <li class="menu-list__item"><a href="" class="menu-list__link">Контакты</a></li>
+          </ul>
+          <div class="contact-wrap">
+            <ul class="menu-contact-list">
+              <li class="menu-contact-list__item">
+                <a href="tel:+380961111111" class="menu-contact-list__tel">+38 096 111 11 11</a>
+              </li>
+              <li class="menu-contact-list__item">
+                <a href="mailto:info@devstudio.com" class="menu-contact-list__mail">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-social-list">
+              <li class="menu-social-list__item"><a href="https://www.instagram.com/" class="menu-social-list__link"></a>Instagram</li>
+              <li class="menu-social-list__item"><a href="https://twitter.com" class="menu-social-list__link"></a>Twitter</li>
+              <li class="menu-social-list__item"><a href="https://www.facebook.com" class="menu-social-list__link"></a>Facebook</li>
+              <li class="menu-social-list__item"><a href="https://ru.linkedin.com" class="menu-social-list__link"></a>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+    </header>
     <main>
       <!-- block hero -->
       <!-- <section class="hero-section">
@@ -433,5 +466,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
