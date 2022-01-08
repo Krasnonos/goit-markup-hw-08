@@ -4,19 +4,41 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+    @media screen and (max-width: 1199px) {
+        text-align: center
+    }
 }
 
 .footer__container{
-    display: flex;
+    // display: flex;
+    // align-items: baseline;
     align-items: baseline;
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 
+.tablet-flex{
+    align-items: baseline;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.footer__thumb{
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 50%;
+    }
+}
 .contacts__list{
     @extend %list;
 }
 
 .contacts__location,
 .contacts__link {
+    // font-style: normal;
+    // font-size: 14px;
+    // line-height: 1.71;
+    // letter-spacing: 0.03em;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -24,9 +46,15 @@
 }
 
 .contacts__location {
+    // margin-top: 20px;
+    // margin-bottom: 9px;
+    // color: $white-color;
     margin-top: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     color: $white-color;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .contacts__link {
@@ -40,11 +68,38 @@
 }
 
 .contacts__item:not(:last-child){
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-social{
-    margin-left: 70px;
+    // margin-left: 70px;
+    // &__text{
+    //     margin-bottom: 20px;
+    //     font-weight: 700;
+    //     font-size: 14px;
+    //     line-height: 1.14;
+    //     letter-spacing: 0.03em;
+    //     text-transform: uppercase;
+    //     color: $white-color;
+    // }
+    // &__list{
+    //     @extend %list;
+    // }
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 50%;
+    }
+    @media screen and(min-width: 1200px) {
+        margin-left: 70px;
+    }
+    &__list{
+            @extend %list;
+        }
     &__text{
         margin-bottom: 20px;
         font-weight: 700;
@@ -53,8 +108,5 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $white-color;
-    }
-    &__list{
-        @extend %list;
     }
 }
