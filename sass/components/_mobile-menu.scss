@@ -1,8 +1,10 @@
 .header-button-open{
-    padding: 12px 8px;
+    min-width: 40px;
+    min-height: 40px;
     border: none;
     background-color: transparent;
     margin-left: auto;
+    cursor: pointer;
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -12,8 +14,16 @@
     }
 }
 
+.header__menu-icon{
+    width: 24px;
+    height: 16px;
+}
+
 .menu-container{
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0px;
     width: 100vw;
@@ -31,16 +41,18 @@
 
 .close-button{
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 11px;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
-.header__menu-icon{
-    width: 19px;
-    height: 19px;
+.header__close-icon{
+    width: 24px;
+    height: 16px;
 }
 
 .menu-list,
@@ -55,12 +67,17 @@
 
 .menu-list__link{
     padding: 10px;
+    padding-left: 0;
     text-decoration: none;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #212121;
+}
+
+.menu-list__link--current{
+    color: $accent-color;
 }
 
 .menu-contact-list__item + .menu-contact-list__item{
@@ -93,15 +110,26 @@
     display: flex;
 }
 
-.menu-social-list__item + .menu-social-list__item{
-    margin-left: 20px;
-}
-
 .menu-social-list__item{
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color;
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -10px;
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
 }
+
+.menu-social-list__item + .menu-social-list__item{
+    position: relative;
+    margin-left: 20px;
+}
+
 
