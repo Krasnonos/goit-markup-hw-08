@@ -131,15 +131,24 @@
             <h2 class="work-section__title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <img class="work-list__image" src="./images/img.jpg" alt="клавиатура" width="370" />
+              <img class="work-list__image" 
+              srcset="./images/reasons/imgreasons-1-1x-min.jpg  1x,
+                      ./images/reasons/imgreasons-1-2x-min.jpg  2x" 
+                      src="./images/reasons/imgreasons-1-1x-min.jpg" alt="клавиатура" width="370" />
               <p class="work-list__text">Десктопные приложения</p>
             </li>
             <li class="work-list__item">
-              <img class="work-list__image" src="./images/box2.jpg" alt="экран" width="370" />
+              <img class="work-list__image" 
+              srcset="./images/reasons/imgreasons-2-1x-min.jpg  1x,
+                      ./images/reasons/imgreasons-2-2x-min.jpg  2x" 
+                      src="./images/reasons/imgreasons-2-1x-min.jpg" alt="экран" width="370" />
               <p class="work-list__text">Мобильные приложения</p>
             </li>
             <li class="work-list__item">
-              <img class="work-list__image" src="./images/box3.jpg" alt="планшет" width="370" />
+              <img class="work-list__image" 
+              srcset="./images/reasons/imgreasons-3-1x-min.jpg  1x,
+                      ./images/reasons/imgreasons-3-2x-min.jpg  2x" 
+                      src="./images/reasons/imgreasons-3-1x-min.jpg" alt="планшет" width="370" />
               <p class="work-list__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -151,7 +160,21 @@
             <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img class="team-list__image" src="./images/img-2.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                srcset="./images/team/imgteam-1-desk-1x-min.jpg  1x.
+                        ./images/team/imgteam-1-desk-1x-min.jpg  2x"
+                        media="(min-width= 1200px">
+                <source
+                srcset="./images/team/imgteam-1-tab-1x-min.jpg  1x.
+                        ./images/team/imgteam-1-tab-1x-min.jpg  2x"
+                        media="(min-width= 768px">
+                <source
+                srcset="./images/team/imgteam-1-mob-1x-min.jpg  1x.
+                        ./images/team/imgteam-1-mob-1x-min.jpg  2x"
+                        media="(min-width= 320px">
+              <img class="team-list__image" src="./images/team/imgteam-1-desk-1x-min.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team-list__thumb">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__position">Product Designer</p>
