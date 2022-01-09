@@ -18,17 +18,13 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-@media screen and (min-width:1200px) {
-    font-size: 36px;
-    margin-bottom: 50px;
-}
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .clients-list{
-    // @extend %list;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @extend %list;
     display: flex;
     flex-wrap: wrap;
@@ -41,11 +37,6 @@
 }
 
 .clients-list__item{
-    // width: 170px;
-    // height: 92px;
-    // & + &{
-    //     margin-left: 30px;
-    // }
     width: calc(100% / 2 - 30px);
     margin: 15px;
     @media screen and (min-width:768px) {
