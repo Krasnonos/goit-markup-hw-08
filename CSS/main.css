@@ -212,6 +212,10 @@ img {
   cursor: pointer;
 }
 
+.close-button:hover, .close-button:focus {
+  fill: #2196f3;
+}
+
 .header__close-icon {
   width: 24px;
   height: 16px;
