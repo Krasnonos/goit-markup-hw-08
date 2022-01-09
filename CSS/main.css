@@ -416,6 +416,7 @@ img {
   .contact-list {
     margin-left: auto;
     margin-right: 0;
+    min-width: 355px;
     flex-direction: row;
   }
   .contact-list__item:not(:last-child) {
@@ -423,11 +424,15 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contact-list__item + .contact-list__item {
+    margin-top: 10px;
+  }
+}
+
 .contact-list__link {
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
