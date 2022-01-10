@@ -724,7 +724,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .team-section__title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
