@@ -848,9 +848,6 @@ img {
   .clients-list__item {
     min-width: 170px;
   }
-  .clients-list__item + .clients-list__item {
-    margin-left: 30px;
-  }
 }
 
 .clients-list__link {
